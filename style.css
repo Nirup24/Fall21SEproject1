@@ -3,18 +3,70 @@
     margin: 0;
     padding: 0;
 }
+
+
+
+fieldset {
+   /*float: left;
+  background-color: #eeeeee;
+  width: 20%;
+  padding: 20px 40px;
+  margin: 50px 0;
+  padding-top: 5%
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;*/
+}
+
+input[type=text], select {
+  /*width: 50%;*/
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+   padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #45a049;
+}
+
+
+
+
+
+
+
+
 /*---------Navigation---------*/
 #nav-bar
 {
+
+  
     position:sticky;
     top: 0;
     z-index: 10;
+  
+    /*height: 500px*/
+    text-decoration: none;
+    background-color: white;
+    /*height: 45px;*/
+    width: 100%;
+    float: left;
+
+
+
+
+
 }
-.navbar-brand img
-{
-    height: 60px;
-    padding-left: 30px;
-}
+
 .navbar-nav li
 {
     padding: 0 10px;
@@ -28,10 +80,10 @@
 {
     color: #007bff!important;
 }
-.navbar
+/*.navbar
 {
     background: #fff;
-}
+}*/
 navbar-toggler
 {
     border: none!important;
@@ -41,6 +93,16 @@ navbar-toggler
     color: #555!important;
     font-weight: 600;
     font-size: 16px;
+}
+
+
+
+
+
+.home
+{
+  height: 500px
+
 }
 /*-----------Slider-----------*/
 #slider
@@ -62,15 +124,17 @@ navbar-toggler
 }
 .carousel-caption h5
 {
-   color:blue;
+   color:#00FFFF;
     font-size: 42px;
 }
+
+
 /*--------------About--------------*/
 #about
 {
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 50px;
-    color: green;   
+    color: black;   
 }
 
 #about btn
@@ -85,8 +149,8 @@ navbar-toggler
 .skills-bar p
 {
     margin-bottom: 6px;
-    font-weight: 600;
-    height: 50px;
+    font-weight: 300;
+    height: 20px;
 }
 img {
     vertical-align: middle;
@@ -95,5 +159,250 @@ img {
     width: 100%;
 }
 
+.contactForm .inputBox input[type="submit"]
+{
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border:none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+
+}
 
 
+/*--------------Services-------------*/
+
+.services{
+
+}
+
+
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    bottom: 5px;
+
+    /*height: 400px;
+    width: 300px;*/
+}
+
+
+
+
+.card:hover {
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+}
+
+
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+    /*height: 500px;
+    width:500px;*/
+    background-color: #00FFFF;
+}
+
+.card-img-top {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size: 1.28571429em;
+    font-weight: 700;
+    line-height: 1.2857em;
+
+}
+
+.card-text {
+    clear: both;
+    margin-top: .5em;
+    color: rgba(0, 0, 0, .68);
+
+}
+
+.card-footer {
+    font-size: 1em;
+    position: static;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    padding: .75em 1em;
+    color: rgba(0, 0, 0, .4);
+    border-top: 1px solid rgba(0, 0, 0, .05) !important;
+    background: #fff;
+
+
+
+
+}
+
+.card-inverse .btn {
+    border: 1px solid rgba(0, 0, 0, .05);
+}
+
+.profile {
+    position: absolute;
+    top: -12px;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.profile-avatar {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile-inline {
+    position: relative;
+    top: 0;
+    display: inline-block;
+}
+
+.profile-inline ~ .card-title {
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: top;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.meta {
+    font-size: 1em;
+    color: rgba(0, 0, 0, .4);
+}
+
+.meta a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .4);
+}
+
+.meta a:hover {
+    color: rgba(0, 0, 0, .87);
+}
+
+
+
+.clientsay
+{
+  height: 300px;
+  background-color: #708090;
+}
+
+/*.carousel-inner.itemactive img
+{
+  top: 0;left: 0;right: 0;width: 150px;height: 150px;margin: auto;display: block;font-size: 18px;line-height: 46px;text-align: center;position: relative;
+}*/
+/*.item active img
+{
+width: 150px;height: 150px;margin: auto;display: block;font-size: 18px;line-height: 46px;text-align: center;
+}*/
+
+.clientsay img{
+  width: 150px;height: 150px;margin: auto;display: block;font-size: 18px;line-height: 46px;text-align: center;
+
+}
+
+.clientsay h2
+{
+  text-align: center;
+}
+.clientsay p
+{
+  text-align: center;
+}
+
+
+
+/*--------contactus---------*/
+
+
+/*----------news----------*/
+.blogShort{ border-bottom:1px solid #ddd;}
+.add{background: #333; padding: 10%; height: 300px;}
+
+.nav-sidebar { 
+    width: 100%;
+    padding: 8px 0; 
+    border-right: 1px solid #ddd;
+}
+.nav-sidebar a {
+    color: #333;
+    -webkit-transition: all 0.08s linear;
+    -moz-transition: all 0.08s linear;
+    -o-transition: all 0.08s linear;
+    transition: all 0.08s linear;
+}
+.nav-sidebar .active a { 
+    cursor: default;
+    background-color: #34ca78; 
+    color: #fff; 
+}
+.nav-sidebar .active a:hover {
+    background-color: #37D980;   
+}
+.nav-sidebar .text-overflow a,
+.nav-sidebar .text-overflow .media-body {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; 
+}
+
+.btn-blog {
+    color: #ffffff;
+    background-color: #37d980;
+    border-color: #37d980;
+    border-radius:0;
+    margin-bottom:10px
+}
+.btn-blog:hover,
+.btn-blog:focus,
+.btn-blog:active,
+.btn-blog.active,
+.open .dropdown-toggle.btn-blog {
+    color: white;
+    background-color:#34ca78;
+    border-color: #34ca78;
+}
+article h2{color:#333333;}
+h2{color:black;}
+ .margin10{margin-bottom:10px; margin-right:10px;}
+
+
+
+ .footer
+ {
+  /*height: 300px;*/
+  background-color:#663399;
+ }
+ 
+
+ .footer a{
+  color:white;
+ }
+
+ 
